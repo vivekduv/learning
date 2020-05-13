@@ -29,7 +29,7 @@
     </properties>
     <modules>
         <module>camel</module>
-        <module>springframework</module>
+    <module>springframework</module>
         <module>model</module>
     </modules>
     <dependencies>
