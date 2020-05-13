@@ -8,6 +8,25 @@
     <artifactId>learning</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <properties>
+        <spring.version>5.2.6.RELEASE</spring.version>
+        <spring.boot.version>2.2.7.RELEASE</spring.boot.version>
+        <camel.spring.version>3.2.0</camel.spring.version>
+        <javax.persistence-api.version>2.2</javax.persistence-api.version>
+        <hibernate-jpa-api.version>hibernate-jpa-2.1-api</hibernate-jpa-api.version>
+        <hibernate-jpa.version>1.0.2.Final</hibernate-jpa.version>
+        <spring-data-jpa.version>2.2.7.RELEASE</spring-data-jpa.version>
+        <eclipselink.version>2.7.7</eclipselink.version>
+        <ojdbc8.version>19.3.0.0</ojdbc8.version>
+        <activemq-broker.version>5.15.12</activemq-broker.version>
+        <quartz.version>2.3.2</quartz.version>
+        <solace.version>10.8.1</solace.version>
+        <quickfixj.version>2.1.1</quickfixj.version>
+        <jasypt.version>1.9.3</jasypt.version>
+        <activemq-camel.version>5.15.12</activemq-camel.version>
+        <coherence-spring.version>2.0.0</coherence-spring.version>
+        <hazelcast.version>4.0.1</hazelcast.version>
+    </properties>
     <modules>
         <module>camel</module>
         <module>springframework</module>
@@ -17,177 +36,170 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
-            <version>5.2.0.RELEASE</version>
+            <version>${spring.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
-            <version>5.2.0.RELEASE</version>
+            <version>${spring.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-beans</artifactId>
-            <version>5.2.0.RELEASE</version>
+            <version>${spring.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-web</artifactId>
-            <version>5.2.0.RELEASE</version>
+            <version>${spring.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-jdbc</artifactId>
-            <version>5.2.0.RELEASE</version>
+            <version>${spring.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-tx</artifactId>
-            <version>5.2.0.RELEASE</version>
+            <version>${spring.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-jdbc</artifactId>
-            <version>5.2.0.RELEASE</version>
+            <version>${spring.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
-            <version>5.2.0.RELEASE</version>
+            <version>${spring.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-tx</artifactId>
-            <version>5.2.0.RELEASE</version>
+            <version>${spring.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot</artifactId>
-            <version>2.2.0.RELEASE</version>
+            <version>${spring.boot.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-jms</artifactId>
-            <version>5.2.0.RELEASE</version>
+            <version>${spring.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.camel</groupId>
             <artifactId>camel-spring</artifactId>
-            <version>2.24.2</version>
+            <version>${camel.spring.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.camel</groupId>
             <artifactId>camel-jms</artifactId>
-            <version>2.24.2</version>
+            <version>${camel.spring.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.camel</groupId>
             <artifactId>camel-core</artifactId>
-            <version>2.24.2</version>
+            <version>${camel.spring.version}</version>
         </dependency>
         <dependency>
             <groupId>javax.persistence</groupId>
             <artifactId>javax.persistence-api</artifactId>
-            <version>2.2</version>
+            <version>${javax.persistence-api.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.camel</groupId>
             <artifactId>camel-jpa</artifactId>
-            <version>2.24.2</version>
+            <version>${camel.spring.version}</version>
         </dependency>
-        <dependency>
+         <dependency>
             <groupId>org.hibernate.javax.persistence</groupId>
-            <artifactId>hibernate-jpa-2.0-api</artifactId>
-            <version>1.0.1.Final</version>
+            <artifactId>${hibernate-jpa-api.version}</artifactId>
+            <version>${hibernate-jpa.version}</version>
         </dependency>
+
         <dependency>
             <groupId>org.springframework.data</groupId>
             <artifactId>spring-data-jpa</artifactId>
-            <version>2.2.0.RELEASE</version>
+            <version>${spring-data-jpa.version}</version>
         </dependency>
         <dependency>
             <groupId>org.eclipse.persistence</groupId>
             <artifactId>eclipselink</artifactId>
-            <version>2.6.8</version>
+            <version>${eclipselink.version}</version>
         </dependency>
         <dependency>
             <groupId>com.oracle.ojdbc</groupId>
             <artifactId>ojdbc8</artifactId>
-            <version>19.3.0.0</version>
+            <version>${ojdbc8.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.activemq</groupId>
             <artifactId>activemq-broker</artifactId>
-            <version>5.15.10</version>
+            <version>${activemq-broker.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.activemq</groupId>
             <artifactId>activemq-camel</artifactId>
-            <version>5.15.10</version>
+            <version>${activemq-camel.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.camel</groupId>
             <artifactId>camel-quartz</artifactId>
-            <version>2.24.2</version>
+            <version>${camel.spring.version}</version>
         </dependency>
         <dependency>
             <groupId>org.quartz-scheduler</groupId>
             <artifactId>quartz</artifactId>
-            <version>2.3.1</version>
+            <version>${quartz.version}</version>
         </dependency>
         <dependency>
             <groupId>com.solacesystems</groupId>
             <artifactId>sol-common</artifactId>
-            <version>10.6.3</version>
+            <version>${solace.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.camel</groupId>
             <artifactId>camel-quickfix</artifactId>
-            <version>2.24.2</version>
+            <version>${camel.spring.version}</version>
         </dependency>
         <dependency>
             <groupId>org.quickfixj</groupId>
             <artifactId>quickfixj-messages-all</artifactId>
-            <version>2.1.1</version>
+            <version>${quickfixj.version}</version>
         </dependency>
         <dependency>
             <groupId>com.solacesystems</groupId>
             <artifactId>sol-jms</artifactId>
-            <version>10.6.3</version>
+            <version>${solace.version}</version>
         </dependency>
         <dependency>
             <groupId>com.oracle.coherence.spring</groupId>
             <artifactId>coherence-spring</artifactId>
-            <version>2.0.0</version>
+            <version>${coherence-spring.version}</version>
         </dependency>
-        <dependency>
-            <groupId>com.oracle.bedrock.coherence</groupId>
-            <artifactId>coherence-12.2.1.4</artifactId>
-            <version>5.0.13</version>
-        </dependency>
+
         <dependency>
             <groupId>com.hazelcast</groupId>
             <artifactId>hazelcast-all</artifactId>
-            <version>3.12.2</version>
+            <version>${hazelcast.version}</version>
         </dependency>
         <dependency>
             <groupId>org.quickfixj</groupId>
             <artifactId>quickfixj-messages-all</artifactId>
-            <version>2.1.1</version>
+            <version>${quickfixj.version}</version>
         </dependency>
-        <dependency>
-            <groupId>org.apache.kafka</groupId>
-            <artifactId>kafka_2.12</artifactId>
-            <version>2.3.0</version>
-        </dependency>
+
         <dependency>
             <groupId>org.jasypt</groupId>
             <artifactId>jasypt</artifactId>
-            <version>1.9.3</version>
+            <version>${jasypt.version}</version>
         </dependency>
         <dependency>
             <groupId>org.jasypt</groupId>
             <artifactId>jasypt-spring31</artifactId>
-            <version>1.9.3</version>
+            <version>${jasypt.version}</version>
         </dependency>
 
 
