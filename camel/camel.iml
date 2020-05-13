@@ -174,5 +174,6 @@
     <orderEntry type="library" name="Maven: com.hazelcast:hazelcast-all:4.0.1" level="project" />
     <orderEntry type="library" name="Maven: org.jasypt:jasypt:1.9.3" level="project" />
     <orderEntry type="library" name="Maven: org.jasypt:jasypt-spring31:1.9.3" level="project" />
+    <orderEntry type="module" module-name="model" />
   </component>
 </module>
